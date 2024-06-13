@@ -39,8 +39,9 @@ public class Deque {
             System.out.println("Queue is full");
             return;
         }
-        if(rear == -1){
+        if(front == -1){
             rear = 0;
+            front = 0;
         }
         else if(rear == size-1){
             rear = 0;
